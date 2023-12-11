@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Input</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Data Input Form</h1>
+        <form method="post" action="/submit" class="mt-3">
+            <div class="form-group">
+                <label for="rank">ระดับอาชีพ:</label>
+                <select name="rank" class="form-control" required>
+                    <option value="1">คนกวาดขยะ</option>
+                    <option value="2">คนขายข้าว</option>
+                    <option value="3">พนักงานทั่วไป</option>
+                    <option value="4">ผบห</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="sickness">ระดับการป่วย:</label>
+                <select name="sickness" class="form-control" required>
+                    <option value="1">ป่วยน้อย</option>
+                    <option value="2">ป่วยกลางๆ</option>
+                    <option value="3">ป่วยหนัก</option>
+                    <option value="4">ใกล้เดี้ยง</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="hospital_rank">ระดับของโรงพยาบาล:</label>
+                <select name="hospital_rank" class="form-control" required>
+                    <option value="1">ราคาโครตถูก</option>
+                    <option value="2">ราคาถูก</option>
+                    <option value="3">ราคากลาง</option>
+                    <option value="4">ราคาแพง</option>
+                    <option value="5">ราคาโครตแพง</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="age">อายุ:</label>
+                <select name="age" class="form-control" required>
+                    <option value="1">เด็ก</option>
+                    <option value="2">วัยรุ่น</option>
+                    <option value="3">วัยทอง</option>
+                    <option value="4">แก่</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="cost"> ค่าใช้จ่าย (฿):</label>
+                <input type="number" name="cost" class="form-control" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        {% if result %}
+            <div class="mt-4">
+                <p><span style="color: {{ 'green' if result.rank_pass else 'red' }}">{{ result.word }}</span></p>
+            </div>
+        {% endif %}
+
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
