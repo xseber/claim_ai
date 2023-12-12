@@ -12,7 +12,7 @@ import numpy as np
 import skops.io as sio
 
 model = sio.load('model.md',trusted= True)
-
+enc =  sio.load('encode.md',trusted= True)
 app = Quart(__name__)
 
 @app.route('/')
@@ -21,7 +21,6 @@ async def index():
 
 @app.route('/submit', methods=['POST'])
 async def submit():
-    
     if request.method == 'POST':
         form = await request.form 
         rank =  form['rank'][-1]
@@ -30,15 +29,17 @@ async def submit():
         age = form['age'][-1]
         cost =  form['cost']
 
-        data_input =np.array([[int(rank), int(sickness), int(hospital_rank), int(age), float(cost)]])
-
-        model_result = model.predict(data_input)[-1]
+        data_input =np.array([[int(sickness), int(rank), int(hospital_rank), int(age)]])
         print(data_input)
+        x = enc.transform(data_input).toarray()
+        x = np.concatenate((x, np.array(np.log(np.log(np.log([float(cost)])))).reshape(-1,1)), axis=1)
+        model_result = model.predict(x)
+
         print('result',model_result)
         # Process the data as needed (e.g., save to a database)
 
-        result = {'rank_pass': True if model_result == 1 else False
-                , 'word' : 'Pass' if model_result == 1 else 'Anomaly!!'}
+        result = {'rank_pass': True if model_result[-1] == 1 else False
+                , 'word' : 'Rich!!' if model_result[-1] == 1 else 'Poor!!'}
         return await render_template('index.html', result = result)
     return await render_template('index.html', result = {'rank_pass':False, 'word':'incorrect method'})
 
