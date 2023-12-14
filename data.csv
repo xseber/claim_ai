@@ -1,0 +1,14 @@
+| Date | Patient Name | Age | Power Purchase | Hospital Rank | Hospital Area | ICD-9 Code (Human Readable) | ICD-10 Code | ICD-10 Description | Days of Admit | Cost | Is Fraud? |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2023-12-29 | Christopher Davis | 40 | Medium | Public | Rural | Open Appendectomy | K35.80 | Acute appendicitis without rupture or peritonitis | 7 (Fraud) | 30,000 THB | Yes |
+| 2023-12-29 | Olivia Jones | 29 | Medium | Public | City | Laparoscopic Appendectomy | K35.81 | Acute appendicitis with rupture | 4 (Not Fraud) | 22,000 THB | No |
+| 2023-12-29 | David Smith | 64 | Medium | Private | Rural | Open Appendectomy | K35.80 | Unspecified appendicitis | 3 (Fraud) | 28,000 THB | Yes |
+| 2023-12-29 | Maria Garcia | 37 | Medium | Private | City | Laparoscopic Appendectomy | K35.81 | Other appendicitis | 2 (Not Fraud) | 18,000 THB | No |
+| 2023-12-30 | Michael Brown | 55 | Medium | Public | Rural | Open Appendectomy | K35.80 | Acute appendicitis without rupture or peritonitis | 5 (Not Fraud) | 25,000 THB | No |
+| 2023-12-30 | Emily Clark | 19 | Medium | Public | City | Laparoscopic Appendectomy | K35.81 | Acute appendicitis with rupture | 2 (Not Fraud) | 15,000 THB | No |
+| 2023-12-30 | William Johnson | 80 | Medium | Private | Rural | Open Appendectomy | K35.80 | Unspecified appendicitis | 1 (Fraud) | 12,000 THB | Yes |
+| 2023-12-30 | Jessica Hernandez | 48 | Medium | Private | City | Laparoscopic Appendectomy | K35.81 | Other appendicitis | 6 (Fraud) | 36,000 THB | Yes |
+| 2023-12-31 | Thomas Miller | 34 | Medium | Public | Rural | Open Appendectomy | K35.80 | Acute appendicitis without rupture or peritonitis | 4 (Not Fraud) | 20,000 THB | No |
+| 2023-12-31 | Amanda White | 22 | Medium | Public | City | Laparoscopic Appendectomy | K35.81 | Acute appendicitis with rupture | 3 (Not Fraud) | 16,000 THB | No |
+| 2023-12-31 | Daniel Lee | 60 | Medium | Private | Rural | Open Appendectomy | K35.80 | Unspecified appendicitis | 8 (Fraud) | 42,000 THB | Yes |
+| 2023-12-31 | Elizabeth Taylor | 50 | Medium | Private | City | Laparoscopic Appendectomy | K35.81 | Other appendicitis | 5 (Not Fraud) | 30,000 THB | No |

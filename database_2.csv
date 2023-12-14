@@ -1,0 +1,59 @@
+age,pp,hp_rank,hp_area,icd9,icd10,days_of_admit,cost,Fraud?
+24,Low,Public,Rural,Open,K35.80,3,8000,Yes
+52,Low,Public,City,Laparoscopic,K35.81,4,10000,Yes
+36,Low,Private,Rural,Open,K35.90,5,15000,Yes
+68,Low,Private,City,Open,K35.80,2,22000,Yes
+14,Low,Public,Rural,Open,K35.80,1,4000,No
+34,Low,Public,City,Laparoscopic,K35.81,2,5000,No
+55,Low,Private,Rural,Open,K35.90,3,7500,No
+26,Low,Private,City,Open,K35.80,4,10000,No
+18,Low,Public,Rural,Open,K35.80,1,4000,No
+40,Low,Public,City,Laparoscopic,K35.81,2,5000,No
+62,Low,Private,Rural,Open,K35.90,3,7500,No
+38,Low,Private,City,Open,K35.80,4,10000,No
+40,High,Public,Rural,Open,K35.90,2,15000,Yes
+28,High,Public,City,Open,K35.91,3,22000,Yes
+60,High,Private,Rural,Open,K35.80,4,28000,Yes
+32,High,Private,City,Open,K36.00,5,35000,Yes
+55,High,Public,Rural,Laparoscopic,K35.81,1,7500,No
+16,High,Public,City,Open,K35.80,2,10000,No
+75,High,Private,Rural,Open,K35.90,3,16000,No
+42,High,Private,City,Open,K36.00,4,20000,No
+30,High,Public,Rural,Open,K35.80,1,5000,No
+20,High,Public,City,Laparoscopic,K35.81,2,8000,No
+58,High,Private,Rural,Open,K35.90,3,12000,No
+44,High,Private,City,Open,K36.00,4,15000,No
+24,Low,Public,Rural,Laparoscopic,K35.81,3,16000,Yes
+52,Medium,Public,City,Laparoscopic,K35.81,4,20000,Yes
+36,High,Private,Rural,Laparoscopic,K35.81,5,28000,Yes
+14,Low,Public,Rural,Laparoscopic,K35.81,1,10000,No
+34,Medium,Public,City,Laparoscopic,K35.81,2,12000,No
+55,High,Private,Rural,Laparoscopic,K35.81,3,15000,No
+26,Low,Public,Rural,Laparoscopic,K35.81,1,8000,No
+18,Medium,Public,City,Laparoscopic,K35.81,2,10000,No
+40,High,Private,Rural,Laparoscopic,K35.81,3,12000,No
+62,Low,Public,Rural,Laparoscopic,K35.81,1,6000,No
+35,Medium,Public,Rural,Open,K35.80,2,14000,Yes
+23,Medium,Public,City,Laparoscopic,K35.81,3,18000,No
+58,Medium,Private,Rural,Open,K35.80,4,26000,Yes
+30,Medium,Private,City,Laparoscopic,K35.81,5,32000,No
+50,Medium,Public,Rural,Open,K35.80,1,8000,No
+13,Medium,Public,City,Laparoscopic,K35.81,2,10000,No
+73,Medium,Private,Rural,Open,K35.80,3,16000,No
+40,Medium,Private,City,Laparoscopic,K35.81,4,20000,No
+28,Medium,Public,Rural,Open,K35.80,1,6000,No
+16,Medium,Public,City,Laparoscopic,K35.81,2,8000,No
+56,Medium,Private,Rural,Open,K35.80,3,12000,No
+42,Medium,Private,City,Laparoscopic,K35.81,4,15000,No
+40,Medium,Public,Rural,Open, K35.80 ,7,30000,Yes
+29,Medium,Public,City,Laparoscopic, K35.81 ,4,22000,No
+64,Medium,Private,Rural,Open, K35.80 ,3,28000,Yes
+37,Medium,Private,City,Laparoscopic, K35.81 ,2,18000,No
+55,Medium,Public,Rural,Open, K35.80 ,5,25000,No
+19,Medium,Public,City,Laparoscopic, K35.81 ,2,15000,No
+80,Medium,Private,Rural,Open, K35.80 ,1,12000,Yes
+48,Medium,Private,City,Laparoscopic, K35.81 ,6,36000,Yes
+34,Medium,Public,Rural,Open, K35.80 ,4,20000,No
+22,Medium,Public,City,Laparoscopic, K35.81 ,3,16000,No
+60,Medium,Private,Rural,Open, K35.80 ,8,42000,Yes
+50,Medium,Private,City,Laparoscopic, K35.81 ,5,30000,No
